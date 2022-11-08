@@ -42,16 +42,60 @@ div .search {
     border-radius: 3px;
 }
 
+/* grid content */
+
+.grid-box {
+    background-color: #343846;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    column-gap: 30px;
+}
+
+.grid-item {
+    background-color: #e9eaeb;
+    border: 1px solid #a1a2a3;
+    height: 200px;
+    font-size: 58px;
+    padding: 20px;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px #333333;
+}
+
 @media screen and (max-width: 956px) {
 
     div .search {
         gap: 5px;
         flex-direction: column;
+        margin: 10px;
     }
     
     .search-city,
     .search-movie {
         width: 70%;
         margin: 2px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-item {
+        height: 200px;
+        line-height: 150px;
     }
 }
