@@ -18,3 +18,40 @@ body {
     width: min(100% - 30px, 1280px);
     margin-inline: auto;
 }
+
+div .search {
+    overflow: hidden;
+    margin-top: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-movie {
+    margin-right: 20px;
+}
+
+.search-city,
+.search-movie {
+    overflow: hidden;
+    width: 47.5%;
+    height: 45px;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 956px) {
+
+    div .search {
+        gap: 5px;
+        flex-direction: column;
+    }
+    
+    .search-city,
+    .search-movie {
+        width: 70%;
+        margin: 2px;
+    }
+}
