@@ -42,6 +42,31 @@ div .search {
     border-radius: 3px;
 }
 
+/* grid content */
+
+.grid-box {
+    background-color: #343846;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    column-gap: 50px;
+    height: 500px;
+}
+
+.grid-item {
+    background-color: #e9eaeb;
+    font-size: 58px;
+    padding: 20px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 956px) {
 
     div .search {
